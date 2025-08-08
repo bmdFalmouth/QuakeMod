@@ -1,4 +1,7 @@
-build/
+
+*.dat
+*.ino
+
 
 #mac os
 .DS_Store
