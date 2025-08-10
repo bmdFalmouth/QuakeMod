@@ -11,3 +11,6 @@ Repo to play around with quake
 ## Level Editing
 - [TrechBroom Manual](https://trenchbroom.github.io/manual/latest/)
 - [TrechBroom Tutorial](https://www.youtube.com/watch?v=rUPS52QU3Co)
+
+## Modelling
+- [Creating Models in Blender](https://www.youtube.com/watch?v=oSH03YZq2EA)
