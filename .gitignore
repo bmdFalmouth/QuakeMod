@@ -1,7 +1,14 @@
-
+#Quake ignores
+*.log
+*.bsp
 *.dat
 *.ino
+*.prt
 
 
 #mac os
 .DS_Store
+
+#autosaves from trechbroom
+src/maps/autosave/
+*-compile.map
