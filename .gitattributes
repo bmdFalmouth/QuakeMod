@@ -6,3 +6,4 @@
 *.lit filter=lfs diff=lfs merge=lfs -text
 *.spr filter=lfs diff=lfs merge=lfs -text
 *.lmp filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
