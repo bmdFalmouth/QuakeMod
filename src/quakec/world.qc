@@ -201,7 +201,7 @@ void() worldspawn =
 // the area based ambient sounds MUST be the first precache_sounds
 
 // player precaches
-	W_Precache(); // get weapon precaches
+	//W_Precache(); // get weapon precaches
 
 // sounds used from C physics code
 	precache_sound("demon/dland2.wav"); // landing thud

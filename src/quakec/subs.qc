@@ -321,8 +321,9 @@ void(float normal) SUB_AttackFinished =
 		self.attack_finished = time + normal;
 };
 
-float(entity targ) visible;
+//float(entity targ) visible;
 
+/*
 void(void() thinkst) SUB_CheckRefire =
 {
 	if (skill != 3)
@@ -333,4 +334,4 @@ void(void() thinkst) SUB_CheckRefire =
 		return;
 	self.cnt = 1;
 	self.think = thinkst;
-};
+};*/

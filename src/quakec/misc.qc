@@ -230,6 +230,26 @@ void() fire_touch =
 //============================================================================
 
 
+///taken from weapon.qc
+
+void() s_explode1 = [ 0, s_explode2 ] {};
+void() s_explode2 = [ 1, s_explode3 ] {};
+void() s_explode3 = [ 2, s_explode4 ] {};
+void() s_explode4 = [ 3, s_explode5 ] {};
+void() s_explode5 = [ 4, s_explode6 ] {};
+void() s_explode6 = [ 5, SUB_Remove ] {};
+
+void() BecomeExplosion =
+{
+	self.movetype = MOVETYPE_NONE;
+	self.velocity = '0 0 0';
+	self.touch = SUB_Null;
+	setmodel(self, "progs/s_explod.spr");
+	self.solid = SOLID_NOT;
+	s_explode1();
+};
+
+
 void() barrel_explode =
 {
 	self.takedamage = DAMAGE_NO;
@@ -323,10 +343,10 @@ void() spikeshooter_use =
 	else
 	{
 		sound(self, CHAN_VOICE, "weapons/spike2.wav", 1, ATTN_NORM);
-		launch_spike(self.origin, self.movedir);
+		//launch_spike(self.origin, self.movedir);
 		newmis.velocity = self.movedir * 500;
-		if (self.spawnflags & SPAWNFLAG_SUPERSPIKE)
-			newmis.touch = superspike_touch;
+		//if (self.spawnflags & SPAWNFLAG_SUPERSPIKE)
+		//	newmis.touch = superspike_touch;
 	}
 };
 

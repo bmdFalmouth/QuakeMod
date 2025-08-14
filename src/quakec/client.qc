@@ -18,8 +18,8 @@
 */
 
 // prototypes
-void() W_WeaponFrame;
-void() W_SetCurrentAmmo;
+void() W_WeaponFrame={}
+void() W_SetCurrentAmmo={}
 void(entity attacker, float damage) player_pain;
 void() player_stand1;
 void(vector org) spawn_tfog;

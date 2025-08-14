@@ -156,7 +156,7 @@ void() player_run = [ $rockrun1, player_run ]
 	self.walkframe = self.walkframe + 1;
 };
 
-
+/*
 void() player_shot1 = [ $shotatt1, player_shot2 ]
 {
 	self.weaponframe = 1;
@@ -272,6 +272,7 @@ void() player_rocket3 = [ $rockatt3, player_rocket4  ] { self.weaponframe = 3; }
 void() player_rocket4 = [ $rockatt4, player_rocket5  ] { self.weaponframe = 4; };
 void() player_rocket5 = [ $rockatt5, player_rocket6  ] { self.weaponframe = 5; };
 void() player_rocket6 = [ $rockatt6, player_run  ] { self.weaponframe = 6; };
+*/
 void(float num_bubbles) DeathBubbles;
 
 void() PainSound =
@@ -468,6 +469,12 @@ void() PlayerDead =
 	self.deadflag = DEAD_DEAD;
 };
 
+//inserted from weapon.qc
+float() crandom =
+{
+	return 2*(random() - 0.5);
+};
+
 vector(float dm) VelocityForDamage =
 {
 	vector v;
@@ -568,8 +575,8 @@ void() PlayerDie =
 	self.radsuit_finished = 0;
 	self.modelindex = modelindex_player; // don't use eyes
 
-	if (deathmatch || coop)
-		DropBackpack();
+	//if (deathmatch || coop)
+	//	DropBackpack();
 
 	self.weaponmodel = "";
 	self.view_ofs = '0 0 -8';

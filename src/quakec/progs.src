@@ -3,8 +3,6 @@
 defs.qc
 subs.qc
 combat.qc
-//items.qc
-//weapons.qc
 world.qc
 client.qc
 player.qc

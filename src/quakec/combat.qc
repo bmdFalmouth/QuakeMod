@@ -17,11 +17,11 @@
     See file, 'COPYING', for details.
 */
 
-void() T_MissileTouch;
+void() T_MissileTouch={};
 void() info_player_start;
 void(entity targ, entity attacker) ClientObituary;
 
-void() monster_death_use;
+//void() monster_death_use;
 
 //============================================================================
 
@@ -102,7 +102,7 @@ void(entity targ, entity attacker) Killed =
 	self.takedamage = DAMAGE_NO;
 	self.touch = SUB_Null;
 
-	monster_death_use();
+	//monster_death_use();
 	self.th_die();
 
 	self = oself;
@@ -205,7 +205,7 @@ void(entity targ, entity inflictor, entity attacker, float damage) T_Damage=
 				if (self.enemy.classname == "player")
 					self.oldenemy = self.enemy;
 				self.enemy = attacker;
-				FoundTarget();
+				//FoundTarget();
 			}
 		}
 	}
