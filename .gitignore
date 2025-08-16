@@ -12,3 +12,6 @@
 #autosaves from trechbroom
 src/maps/autosave/
 *-compile.map
+
+#blender
+*.blend1
