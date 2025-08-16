@@ -351,6 +351,8 @@ void() worldspawn =
 
 	// 63 testing
 	lightstyle(63, "a");
+
+	 precache_model ("progs/Coffee.mdl");
 };
 
 void() StartFrame =

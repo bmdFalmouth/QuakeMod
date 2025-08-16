@@ -1034,7 +1034,7 @@ void() CheckPowerups =
 
 };
 
-
+void() spawn_coffee_cmd;
 /*
 ================
 PlayerPostThink
@@ -1074,6 +1074,11 @@ void() PlayerPostThink =
 		self.jump_flag = self.velocity_z;
 
 	CheckPowerups();
+	if (self.impulse == 201) // pick an unused impulse number
+    {
+        spawn_coffee_cmd();
+        self.impulse = 0;
+    }
 };
 
 
