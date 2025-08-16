@@ -7,7 +7,7 @@
 "classname" "worldspawn"
 "_sun_mangle" ""
 "_tb_mod" "mymod"
-"property 1" ""
+"_tb_def" "external:/Users/bm199305/dev/git/vkQuake/build/mymod/coffeemod.fgd"
 // brush 0
 {
 ( -256 64 16 ) ( -256 -448 16 ) ( -256 -448 -9.600000000000001 ) temp [ 0 -0.6250000000000001 0 0 ] [ 0 0 -1.2499999999999893 0 ] 90 1 1
@@ -73,4 +73,22 @@
 "classname" "light"
 "origin" "8 -232 200"
 "light" "400"
+}
+// entity 3
+{
+"classname" "spawn_coffee"
+"origin" "16 -16 80"
+"angle" "269"
+}
+// entity 4
+{
+"classname" "spawn_coffee"
+"origin" "16 -144 80"
+"angle" "255"
+}
+// entity 5
+{
+"classname" "spawn_coffee"
+"origin" "16 -144 80"
+"angle" "255"
 }

@@ -1,0 +1,9 @@
+@PointClass
+base(Angles)
+size(-16 -16 0, 16 16 32)
+model("progs/Coffee.mdl")
+= spawn_coffee : "Placeable Coffee Model"
+[
+    model(string) : "Model path (relative to game dir)" : "progs/Coffee.mdl"
+    scale(float) : "Editor preview scale" : "1"
+]
