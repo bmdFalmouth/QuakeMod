@@ -77,18 +77,6 @@
 // entity 3
 {
 "classname" "spawn_coffee"
-"origin" "16 -16 80"
-"angle" "269"
-}
-// entity 4
-{
-"classname" "spawn_coffee"
-"origin" "16 -144 80"
-"angle" "255"
-}
-// entity 5
-{
-"classname" "spawn_coffee"
-"origin" "16 -144 80"
-"angle" "255"
+"origin" "96 -128 48"
+"angle" "270"
 }
