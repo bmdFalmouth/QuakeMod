@@ -18,7 +18,7 @@ void(entity hit) do_click_action =
 {
     if (!hit || hit == world)
     {
-        centerprint(self, "Nothing under crosshair.\n");
+        //centerprint(self, "Nothing under crosshair.\n");
         self.selected = world;
         return;
     }
@@ -26,8 +26,8 @@ void(entity hit) do_click_action =
     // optional: only allow marked entities
     if (hit.is_selectable != 1)
     {
-        centerprint(self, hit.classname);
-        centerprint(self, "not selectable");
+        //centerprint(self, hit.classname);
+        //centerprint(self, "not selectable");
         self.selected = world;
         return;
     }
@@ -38,10 +38,6 @@ void(entity hit) do_click_action =
         hit.onclick();  // per-entity handler
     else if (hit.use)
         hit.use();      // fallback to standard .use
-    else{
-        centerprint(self, hit.classname);
-        centerprint(self, "selectable");
-    }
 };
 
 // One-shot click (on press)
