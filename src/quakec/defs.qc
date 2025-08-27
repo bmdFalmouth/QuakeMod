@@ -708,4 +708,12 @@ void() SUB_Remove;
 
 //float(entity targ, entity inflictor) CanDamage;
 
+//My Mod 
+// selection & input state
+.float  is_selectable;    // mark pickable ents with 1
+.entity selected;
+.void() onclick;          // optional per-entity handler
+.float  mouse1_down;      // 1 while MOUSE1 held (for hold-to-select)
 
+void() Cmd_ClickPress;
+void() Cmd_ClickRelease;

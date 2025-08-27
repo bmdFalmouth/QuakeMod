@@ -1074,11 +1074,10 @@ void() PlayerPostThink =
 		self.jump_flag = self.velocity_z;
 
 	CheckPowerups();
-	if (self.impulse == 201) // pick an unused impulse number
-    {
-        spawn_coffee_cmd();
-        self.impulse = 0;
-    }
+	
+	// handle our custom mouse press/release impulses
+	if (self.impulse == 230) { self.impulse = 0; Cmd_ClickPress(); }
+	if (self.impulse == 231) { self.impulse = 0; Cmd_ClickRelease(); }
 };
 
 
